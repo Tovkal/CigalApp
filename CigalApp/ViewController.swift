@@ -15,6 +15,8 @@ private enum File: String {
 
 class ViewController: UIViewController {
 
+    @IBOutlet private var atrasSwitch: UISwitch!
+
     private var player: AVAudioPlayer?
 
     @IBAction func didTapLoHaras() {
@@ -49,7 +51,7 @@ class ViewController: UIViewController {
     }
 
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        if motion == .motionShake {
+        if motion == .motionShake, atrasSwitch.isOn {
             playFile(.atras)
         }
     }

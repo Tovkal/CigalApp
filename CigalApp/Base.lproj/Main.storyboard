@@ -50,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="118" width="90" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                        <state key="normal" title="Mentís!">
+                                        <state key="normal" title="Mentís">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -59,6 +59,32 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcH-nr-rLt">
+                                <rect key="frame" x="92.5" y="600" width="190.5" height="55"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-bf-1HM">
+                                        <rect key="frame" x="12" y="12" width="166.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to atrás" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-MK-fgb">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2q-Av-hbn">
+                                                <rect key="frame" x="117.5" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CQA-bf-1HM" firstAttribute="top" secondItem="HcH-nr-rLt" secondAttribute="top" constant="12" id="6vx-LL-Aj6"/>
+                                    <constraint firstItem="CQA-bf-1HM" firstAttribute="leading" secondItem="HcH-nr-rLt" secondAttribute="leading" constant="12" id="Z4z-sf-10M"/>
+                                    <constraint firstAttribute="bottom" secondItem="CQA-bf-1HM" secondAttribute="bottom" constant="12" id="fXI-QV-EAP"/>
+                                    <constraint firstAttribute="trailing" secondItem="CQA-bf-1HM" secondAttribute="trailing" constant="12" id="roV-87-eCR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,9 +94,14 @@
                             <constraint firstAttribute="bottom" secondItem="bgs-3x-Nqo" secondAttribute="bottom" id="GQj-69-FlB"/>
                             <constraint firstItem="bgs-3x-Nqo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HIK-pA-rzf"/>
                             <constraint firstItem="bgs-3x-Nqo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Htx-xB-pyE"/>
+                            <constraint firstItem="HcH-nr-rLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgU-TP-DJG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HcH-nr-rLt" secondAttribute="bottom" constant="12" id="qdr-tz-DKb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="atrasSwitch" destination="v2q-Av-hbn" id="leo-uc-2HZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
