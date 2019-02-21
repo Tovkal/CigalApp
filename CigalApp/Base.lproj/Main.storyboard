@@ -21,45 +21,69 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cigala" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-3x-Nqo" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ioa-JV-OKC">
-                                <rect key="frame" x="142.5" y="257.5" width="90" height="152"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J8-Ce-HTq" customClass="RoundedView" customModule="CigalApp" customModuleProvider="target">
+                                <rect key="frame" x="134.5" y="249.5" width="106" height="168"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Qf-rCG">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                        <state key="normal" title="¿Lo harás?">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapLoHaras" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdQ-2D-HIr"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-BB-pGe">
-                                        <rect key="frame" x="0.0" y="59" width="90" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                        <state key="normal" title="ATRÁS!">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapAtras" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua0-hj-qGD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-0C-T0r">
-                                        <rect key="frame" x="0.0" y="118" width="90" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                        <state key="normal" title="Mentís">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapMentis" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGF-kd-Vpw"/>
-                                        </connections>
-                                    </button>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="872-sK-aaG">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="168"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rxv-hw-eFL">
+                                            <rect key="frame" x="0.0" y="0.0" width="106" height="168"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ioa-JV-OKC">
+                                        <rect key="frame" x="8" y="8" width="90" height="152"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Qf-rCG" customClass="RoundedButton" customModule="CigalApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" title="¿Lo harás?">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapLoHaras" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdQ-2D-HIr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-BB-pGe" customClass="RoundedButton" customModule="CigalApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="59" width="90" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" title="ATRÁS!">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapAtras" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua0-hj-qGD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-0C-T0r" customClass="RoundedButton" customModule="CigalApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="118" width="90" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" title="Mentís">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapMentis" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGF-kd-Vpw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcH-nr-rLt">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ioa-JV-OKC" secondAttribute="bottom" constant="8" id="Nc9-u4-SmO"/>
+                                    <constraint firstItem="872-sK-aaG" firstAttribute="top" secondItem="6J8-Ce-HTq" secondAttribute="top" id="PcP-Zt-bgN"/>
+                                    <constraint firstItem="ioa-JV-OKC" firstAttribute="leading" secondItem="6J8-Ce-HTq" secondAttribute="leading" constant="8" id="VMu-li-SSV"/>
+                                    <constraint firstAttribute="trailing" secondItem="872-sK-aaG" secondAttribute="trailing" id="k69-Wl-FWw"/>
+                                    <constraint firstAttribute="bottom" secondItem="872-sK-aaG" secondAttribute="bottom" id="l6G-iJ-UWo"/>
+                                    <constraint firstItem="872-sK-aaG" firstAttribute="leading" secondItem="6J8-Ce-HTq" secondAttribute="leading" id="onn-Fk-dLX"/>
+                                    <constraint firstItem="ioa-JV-OKC" firstAttribute="top" secondItem="6J8-Ce-HTq" secondAttribute="top" constant="8" id="v6a-c9-aot"/>
+                                    <constraint firstAttribute="trailing" secondItem="ioa-JV-OKC" secondAttribute="trailing" constant="8" id="wt8-3H-kb3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcH-nr-rLt" customClass="RoundedView" customModule="CigalApp" customModuleProvider="target">
                                 <rect key="frame" x="92.5" y="600" width="190.5" height="55"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-bf-1HM">
@@ -88,13 +112,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ioa-JV-OKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Anv-NC-TFv"/>
-                            <constraint firstItem="ioa-JV-OKC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BK5-Bh-OTA"/>
+                            <constraint firstItem="6J8-Ce-HTq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8jQ-ZO-zYy"/>
                             <constraint firstAttribute="trailing" secondItem="bgs-3x-Nqo" secondAttribute="trailing" id="FvN-j8-h1g"/>
                             <constraint firstAttribute="bottom" secondItem="bgs-3x-Nqo" secondAttribute="bottom" id="GQj-69-FlB"/>
                             <constraint firstItem="bgs-3x-Nqo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HIK-pA-rzf"/>
                             <constraint firstItem="bgs-3x-Nqo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Htx-xB-pyE"/>
                             <constraint firstItem="HcH-nr-rLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgU-TP-DJG"/>
+                            <constraint firstItem="6J8-Ce-HTq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIT-eV-8mU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HcH-nr-rLt" secondAttribute="bottom" constant="12" id="qdr-tz-DKb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
