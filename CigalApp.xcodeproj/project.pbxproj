@@ -14,6 +14,7 @@
 		952DFC57221ED8BB00A28C0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952DFC55221ED8BB00A28C0E /* LaunchScreen.storyboard */; };
 		952DFC61221EE2AB00A28C0E /* loharas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952DFC5F221EE2AB00A28C0E /* loharas.mp3 */; };
 		952DFC62221EE2AB00A28C0E /* atras.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952DFC60221EE2AB00A28C0E /* atras.mp3 */; };
+		952DFC64221EEFA600A28C0E /* mentis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 952DFC63221EEFA600A28C0E /* mentis.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		952DFC58221ED8BB00A28C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		952DFC5F221EE2AB00A28C0E /* loharas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loharas.mp3; sourceTree = "<group>"; };
 		952DFC60221EE2AB00A28C0E /* atras.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = atras.mp3; sourceTree = "<group>"; };
+		952DFC63221EEFA600A28C0E /* mentis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mentis.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				952DFC60221EE2AB00A28C0E /* atras.mp3 */,
 				952DFC5F221EE2AB00A28C0E /* loharas.mp3 */,
+				952DFC63221EEFA600A28C0E /* mentis.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				952DFC57221ED8BB00A28C0E /* LaunchScreen.storyboard in Resources */,
 				952DFC62221EE2AB00A28C0E /* atras.mp3 in Resources */,
+				952DFC64221EEFA600A28C0E /* mentis.mp3 in Resources */,
 				952DFC54221ED8BB00A28C0E /* Assets.xcassets in Resources */,
 				952DFC52221ED8B900A28C0E /* Main.storyboard in Resources */,
 				952DFC61221EE2AB00A28C0E /* loharas.mp3 in Resources */,

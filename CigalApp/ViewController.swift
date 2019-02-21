@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 
 private enum File: String {
-    case loharas, atras
+    case loharas, atras, mentis
 }
 
 class ViewController: UIViewController {
@@ -23,6 +23,10 @@ class ViewController: UIViewController {
 
     @IBAction func didTapAtras() {
         playFile(.atras)
+    }
+
+    @IBAction func didTapMentis() {
+        playFile(.mentis)
     }
 
     private func playFile(_ file: File) {

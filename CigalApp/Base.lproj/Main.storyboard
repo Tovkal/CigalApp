@@ -18,21 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="ioa-JV-OKC">
-                                <rect key="frame" x="150.5" y="257.5" width="74" height="152"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cigala" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-3x-Nqo" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ioa-JV-OKC">
+                                <rect key="frame" x="142.5" y="257.5" width="90" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Qf-rCG">
-                                        <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
-                                        <state key="normal" title="¿Lo harás?"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="¿Lo harás?">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="didTapLoHaras" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdQ-2D-HIr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-BB-pGe">
-                                        <rect key="frame" x="0.0" y="122" width="74" height="30"/>
-                                        <state key="normal" title="ATRÁS!"/>
+                                        <rect key="frame" x="0.0" y="59" width="90" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="ATRÁS!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="didTapAtras" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua0-hj-qGD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-0C-T0r">
+                                        <rect key="frame" x="0.0" y="118" width="90" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Mentís!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapMentis" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGF-kd-Vpw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -42,6 +64,10 @@
                         <constraints>
                             <constraint firstItem="ioa-JV-OKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Anv-NC-TFv"/>
                             <constraint firstItem="ioa-JV-OKC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BK5-Bh-OTA"/>
+                            <constraint firstAttribute="trailing" secondItem="bgs-3x-Nqo" secondAttribute="trailing" id="FvN-j8-h1g"/>
+                            <constraint firstAttribute="bottom" secondItem="bgs-3x-Nqo" secondAttribute="bottom" id="GQj-69-FlB"/>
+                            <constraint firstItem="bgs-3x-Nqo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HIK-pA-rzf"/>
+                            <constraint firstItem="bgs-3x-Nqo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Htx-xB-pyE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -50,4 +76,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="cigala" width="980" height="1242"/>
+    </resources>
 </document>
